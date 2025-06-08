@@ -1,16 +1,45 @@
- body {
-  font-family: Arial, sans-serif;
+/* Reset default margins and paddings */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-ul {
-  list-style: none;
-  padding: 0;
+/* Set basic font and layout defaults */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
+/* Header and footer styling */
+header,
+footer {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  text-align: center;
 }
 
+/* Layout spacing for main content */
+main {
+  flex: auto;
+  display: flex;
+  padding: 1rem;
+}
+
+/* Article and aside padding */
+article,
+aside {
+  padding: 1rem;
+  background-color: white;
+  margin: 0.5rem;
+  border-radius: 8px;
+}
+
+/* Make logo character (if added) larger */
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+}
