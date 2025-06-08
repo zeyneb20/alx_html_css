@@ -1,45 +1,36 @@
-/* Reset default margins and paddings */
-* {
+body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-
-/* Set basic font and layout defaults */
-body {
   font-family: Arial, sans-serif;
-  line-height: 1.6;
-  background-color: #f4f4f4;
-  color: #333;
 }
 
-/* Header and footer styling */
-header,
-footer {
+header, footer {
   background-color: #333;
   color: white;
-  padding: 1rem;
+  padding: 1em;
   text-align: center;
 }
 
-/* Layout spacing for main content */
 main {
   flex: auto;
   display: flex;
-  padding: 1rem;
+  flex-direction: row;
+  height: 100vh;
 }
 
-/* Article and aside padding */
-article,
+article {
+  flex: 2;
+  padding: 1em;
+  overflow-y: auto;
+}
+
 aside {
-  padding: 1rem;
-  background-color: white;
-  margin: 0.5rem;
-  border-radius: 8px;
+  flex: 1;
+  background-color: #f4f4f4;
+  padding: 1em;
+  overflow-y: auto;
 }
 
-/* Make logo character (if added) larger */
-.logo {
-  font-size: 2rem;
-  font-weight: bold;
+footer {
+  margin-top: auto;
 }
