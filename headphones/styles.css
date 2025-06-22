@@ -1,0 +1,66 @@
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
+  padding: 0;
+  max-width: 1000px;
+  margin: auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background: #f2f2f2;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover, a:active {
+  color: #FF6565;
+}
+
+.hero {
+  text-align: center;
+  padding: 2rem;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #FF6565;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover, button:active {
+  opacity: 0.9;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #f2f2f2;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+ 
